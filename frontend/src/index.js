@@ -14,13 +14,10 @@
 // );
 
 
-
-// src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import App from './components/App';
-import './App.css'; // Ensure this path is correct
+import App from './App'; // Correct path to App.js
 
 ReactDOM.render(
   <Router>

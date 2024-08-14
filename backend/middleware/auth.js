@@ -33,6 +33,12 @@
 
 
 
+
+
+
+
+
+
 const jwt = require('jsonwebtoken');
 const User = require('../models/User'); // Adjust the path if needed
 
@@ -62,3 +68,47 @@ const auth = async (req, res, next) => {
 };
 
 module.exports = auth;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const express = require('express');
+// const jwt = require('jsonwebtoken');
+// const router = express.Router();
+
+// const users = [{ userName: 'Suruchi', password: 'Sharma' }]; // Example user list
+
+// router.post('/login', (req, res) => {
+//   const { userName, password } = req.body;
+
+//   const user = users.find(
+//     (u) => u.userName === userName && u.password === password
+//   );
+
+//   if (user) {
+//     const token = jwt.sign({ userName }, 'a40cy8Ymc2dNtT5whytl6K7iljt1RxmpMVAwuwpatdA=', { expiresIn: '1h' });
+//     res.json({ token });
+//   } else {
+//     res.status(401).json({ message: 'Invalid credentials' });
+//   }
+// });
+
+// module.exports = router;
